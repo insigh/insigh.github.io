@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>我的第一篇博客文章 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Relation Networks for Object DetectionThe major contributors of this repository include Dazhi Cheng, Jiayuan Gu, Han Hu and Zheng Zhang. IntroductionRelation Networks for Object Detection is describe">
+<meta property="og:type" content="article">
+<meta property="og:title" content="我的第一篇博客文章">
+<meta property="og:url" content="http://example.com/2021/01/12/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Relation Networks for Object DetectionThe major contributors of this repository include Dazhi Cheng, Jiayuan Gu, Han Hu and Zheng Zhang. IntroductionRelation Networks for Object Detection is describe">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-01-12T13:56:33.000Z">
+<meta property="article:modified_time" content="2021-01-12T14:00:02.589Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 5.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-我的第一篇博客文章" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/01/12/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/" class="article-date">
+  <time class="dt-published" datetime="2021-01-12T13:56:33.000Z" itemprop="datePublished">2021-01-12</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      我的第一篇博客文章
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <hr>
+<h1 id="Relation-Networks-for-Object-Detection"><a href="#Relation-Networks-for-Object-Detection" class="headerlink" title="Relation Networks for Object Detection"></a>Relation Networks for Object Detection</h1><p>The major contributors of this repository include <a target="_blank" rel="noopener" href="https://github.com/chengdazhi">Dazhi Cheng</a>, <a target="_blank" rel="noopener" href="https://github.com/Jiayuan-Gu">Jiayuan Gu</a>, <a target="_blank" rel="noopener" href="https://github.com/ancientmooner">Han Hu</a> and <a target="_blank" rel="noopener" href="https://github.com/stupidZZ">Zheng Zhang</a>.</p>
+<h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p><strong>Relation Networks for Object Detection</strong> is described in an <a target="_blank" rel="noopener" href="https://arxiv.org/abs/1711.11575">CVPR 2018 oral paper</a>. </p>
+<h2 id="Disclaimer"><a href="#Disclaimer" class="headerlink" title="Disclaimer"></a>Disclaimer</h2><p>This is an official implementation for <a target="_blank" rel="noopener" href="https://arxiv.org/abs/1711.11575">Relation Networks for Object Detection</a> based on MXNet. It is worth noting that:</p>
+<ul>
+<li>This repository is tested on official <a target="_blank" rel="noopener" href="https://github.com/apache/incubator-mxnet/commit/e29bb6f76365e45dd44e23941692c9d969959315">MXNet v1.1.0@(commit 629bb6)</a>. You should be able to use it with any version of MXNET that contains required operators like Deformable Convolution. </li>
+<li>We trained our model based on the ImageNet pre-trained <a target="_blank" rel="noopener" href="https://github.com/KaimingHe/deep-residual-networks">ResNet-v1-101</a> using a <a target="_blank" rel="noopener" href="https://github.com/dmlc/mxnet/tree/430ea7bfbbda67d993996d81c7fd44d3a20ef846/tools/caffe_converter">model converter</a>. The converted model produces slightly lower accuracy (Top-1 Error on ImageNet val: 24.0% v.s. 23.6%).</li>
+<li>This repository is based on <a target="_blank" rel="noopener" href="https://github.com/msracver/Deformable-ConvNets">Deformable ConvNets</a>.</li>
+</ul>
+<h2 id="License"><a href="#License" class="headerlink" title="License"></a>License</h2><p>© Microsoft, 2018. Licensed under an MIT license.</p>
+<h2 id="Citing-Relation-Networks-for-Object-Detection"><a href="#Citing-Relation-Networks-for-Object-Detection" class="headerlink" title="Citing Relation Networks for Object Detection"></a>Citing Relation Networks for Object Detection</h2><p>If you find Relation Networks for Object Detection useful in your research, please consider citing:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">@article&#123;hu2017relation,</span><br><span class="line">  title&#x3D;&#123;Relation Networks for Object Detection&#125;,</span><br><span class="line">  author&#x3D;&#123;Hu, Han and Gu, Jiayuan and Zhang, Zheng and Dai, Jifeng and Wei, Yichen&#125;,</span><br><span class="line">  journal&#x3D;&#123;arXiv preprint arXiv:1711.11575&#125;,</span><br><span class="line">  year&#x3D;&#123;2017&#125;</span><br><span class="line">&#125; </span><br></pre></td></tr></table></figure>
+<h2 id="Main-Results"><a href="#Main-Results" class="headerlink" title="Main Results"></a>Main Results</h2><h4 id="Faster-RCNN"><a href="#Faster-RCNN" class="headerlink" title="Faster RCNN"></a>Faster RCNN</h4><table>
+<thead>
+<tr>
+<th></th>
+<th><sub>training data</sub></th>
+<th><sub>testing data</sub></th>
+<th><sub>mAP</sub></th>
+<th><sub><a href="mailto:&#109;&#x41;&#x50;&#x40;&#x30;&#46;&#53;">&#109;&#x41;&#x50;&#x40;&#x30;&#46;&#53;</a></sub></th>
+<th><sub><a href="mailto:&#x6d;&#65;&#x50;&#64;&#48;&#46;&#55;&#53;">&#x6d;&#65;&#x50;&#64;&#48;&#46;&#55;&#53;</a></sub></th>
+<th><sub>mAP@S</sub></th>
+<th><sub>mAP@M</sub></th>
+<th><sub>mAP@L</sub></th>
+<th><sub>Inference Time</sub></th>
+<th><sub>Post Processing Time</sub></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><sub>2FC + nms(0.5)<br /> ResNet-101 </sub></td>
+<td><sub>coco trainval35k</sub></td>
+<td><sub>coco minival</sub></td>
+<td>31.8</td>
+<td>53.9</td>
+<td>32.2</td>
+<td>10.5</td>
+<td>35.2</td>
+<td>51.5</td>
+<td>0.168s</td>
+<td>0.025s</td>
+</tr>
+<tr>
+<td><sub>2FC + softnms(0.6)<br /> ResNet-101 </sub></td>
+<td><sub>coco trainval35k</sub></td>
+<td><sub>coco minival</sub></td>
+<td>32.3</td>
+<td>52.8</td>
+<td>34.1</td>
+<td>11.1</td>
+<td>35.9</td>
+<td>51.8</td>
+<td>0.200s</td>
+<td>0.060s</td>
+</tr>
+<tr>
+<td><sub>2FC + Relation Module + softnms<br />ResNet-101</sub></td>
+<td><sub>coco trainval35k</sub></td>
+<td><sub>coco minival</sub></td>
+<td>34.7</td>
+<td>55.3</td>
+<td>37.2</td>
+<td>13.7</td>
+<td>38.8</td>
+<td>53.6</td>
+<td>0.211s</td>
+<td>0.059s</td>
+</tr>
+<tr>
+<td><sub>2FC + Learn NMS </br>ResNet-101 </sub></td>
+<td><sub>coco trainval35k</sub></td>
+<td><sub>coco minival</sub></td>
+<td>32.6</td>
+<td>51.8</td>
+<td>35.0</td>
+<td>11.8</td>
+<td>36.6</td>
+<td>52.1</td>
+<td>0.162s</td>
+<td>0.020s</td>
+</tr>
+<tr>
+<td><sub>2FC + Relation Module + Learn NMS(e2e)<br />ResNet-101</sub></td>
+<td><sub>coco trainval35k</sub></td>
+<td><sub>coco minival</sub></td>
+<td>35.2</td>
+<td>55.5</td>
+<td>38.0</td>
+<td>15.2</td>
+<td>39.2</td>
+<td>54.1</td>
+<td>0.175s</td>
+<td>0.022s</td>
+</tr>
+</tbody></table>
+<h4 id="Deformable-Faster-RCNN"><a href="#Deformable-Faster-RCNN" class="headerlink" title="Deformable Faster RCNN"></a>Deformable Faster RCNN</h4><table>
+<thead>
+<tr>
+<th></th>
+<th><sub>training data</sub></th>
+<th><sub>testing data</sub></th>
+<th><sub>mAP</sub></th>
+<th><sub><a href="mailto:&#x6d;&#65;&#x50;&#x40;&#48;&#x2e;&#53;">&#x6d;&#65;&#x50;&#x40;&#48;&#x2e;&#53;</a></sub></th>
+<th><sub><a href="mailto:&#x6d;&#65;&#80;&#64;&#x30;&#46;&#55;&#53;">&#x6d;&#65;&#80;&#64;&#x30;&#46;&#55;&#53;</a></sub></th>
+<th><sub>mAP@S</sub></th>
+<th><sub>mAP@M</sub></th>
+<th><sub>mAP@L</sub></th>
+<th><sub>Inference Time</sub></th>
+<th><sub>NMS Time</sub></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><sub>2FC + nms(0.5)<br /> ResNet-101 </sub></td>
+<td><sub>coco trainval35k</sub></td>
+<td><sub>coco minival</sub></td>
+<td>37.2</td>
+<td>58.1</td>
+<td>40.0</td>
+<td>16.4</td>
+<td>41.3</td>
+<td>55.5</td>
+<td>0.180s</td>
+<td>0.022s</td>
+</tr>
+<tr>
+<td><sub>2FC + softnms(0.6)<br /> ResNet-101 </sub></td>
+<td><sub>coco trainval35k</sub></td>
+<td><sub>coco minival</sub></td>
+<td>37.5</td>
+<td>57.3</td>
+<td>41.0</td>
+<td>16.6</td>
+<td>41.7</td>
+<td>55.8</td>
+<td>0.208s</td>
+<td>0.052s</td>
+</tr>
+<tr>
+<td><sub>2FC + Relation Module + Learn NMS(e2e)<br /> ResNet-101 </sub></td>
+<td><sub>coco trainval35k</sub></td>
+<td><sub>coco minival</sub></td>
+<td>38.4</td>
+<td>57.6</td>
+<td>41.6</td>
+<td>18.2</td>
+<td>43.1</td>
+<td>56.6</td>
+<td>0.188s</td>
+<td>0.023s</td>
+</tr>
+</tbody></table>
+<h4 id="FPN"><a href="#FPN" class="headerlink" title="FPN"></a>FPN</h4><table>
+<thead>
+<tr>
+<th></th>
+<th><sub>training data</sub></th>
+<th><sub>testing data</sub></th>
+<th><sub>mAP</sub></th>
+<th><sub><a href="mailto:&#109;&#x41;&#x50;&#64;&#x30;&#46;&#53;">&#109;&#x41;&#x50;&#64;&#x30;&#46;&#53;</a></sub></th>
+<th><sub><a href="mailto:&#109;&#x41;&#x50;&#64;&#48;&#46;&#x37;&#53;">&#109;&#x41;&#x50;&#64;&#48;&#46;&#x37;&#53;</a></sub></th>
+<th><sub>mAP@S</sub></th>
+<th><sub>mAP@M</sub></th>
+<th><sub>mAP@L</sub></th>
+<th><sub>Inference Time</sub></th>
+<th><sub>NMS Time</sub></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><sub>2FC + nms(0.5)<br /> ResNet-101 </sub></td>
+<td><sub>coco trainval35k</sub></td>
+<td><sub>coco minival</sub></td>
+<td>36.6</td>
+<td>59.3</td>
+<td>39.3</td>
+<td>20.3</td>
+<td>40.5</td>
+<td>49.4</td>
+<td>0.196s</td>
+<td>0.037s</td>
+</tr>
+<tr>
+<td><sub>2FC + softnms(0.6)<br /> ResNet-101 </sub></td>
+<td><sub>coco trainval35k</sub></td>
+<td><sub>coco minival</sub></td>
+<td>36.8</td>
+<td>57.8</td>
+<td>40.7</td>
+<td>20.4</td>
+<td>40.8</td>
+<td>49.7</td>
+<td>0.323s</td>
+<td>0.167s</td>
+</tr>
+<tr>
+<td><sub>2FC + Relation Module + Learn NMS(e2e)<br /> ResNet-101 </sub></td>
+<td><sub>coco trainval35k</sub></td>
+<td><sub>coco minival</sub></td>
+<td>38.6</td>
+<td>59.9</td>
+<td>43.0</td>
+<td>22.1</td>
+<td>42.3</td>
+<td>52.8</td>
+<td>0.232s</td>
+<td>0.022s</td>
+</tr>
+</tbody></table>
+<p><em>Running time is counted on a single Maxwell Titan X GPU (mini-batch size is 1 in inference).</em></p>
+<h2 id="Requirements-Software"><a href="#Requirements-Software" class="headerlink" title="Requirements: Software"></a>Requirements: Software</h2><ol>
+<li><p>MXNet from <a target="_blank" rel="noopener" href="https://github.com/apache/incubator-mxnet">the offical repository</a>. We tested our code on <a target="_blank" rel="noopener" href="https://github.com/apache/incubator-mxnet/commit/e29bb6f76365e45dd44e23941692c9d969959315">MXNet v1.1.0@(commit 629bb6)</a>. Due to the rapid development of MXNet, it is recommended to checkout this version if you encounter any issues. We may maintain this repository periodically if MXNet adds important feature in future release.</p>
+</li>
+<li><p>Python 2.7. We recommend using Anaconda2 as it already includes many common packages. We do not support Python 3 yet, if you want to use Python 3 you need to modify the code to make it work.</p>
+</li>
+</ol>
+<ol start="3">
+<li>The following Python packages:<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Cython</span><br><span class="line">EasyDict</span><br><span class="line">mxnet-cu80</span><br><span class="line">opencv-python &gt;&#x3D; 3.2.0</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h2 id="Requirements-Hardware"><a href="#Requirements-Hardware" class="headerlink" title="Requirements: Hardware"></a>Requirements: Hardware</h2><p>Any NVIDIA GPUs with at least 6GB memory should be OK.</p>
+<h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><ol>
+<li><p>Clone the Relation Networks for Object Detection repository.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;msracver&#x2F;Relation-Networks-for-Object-Detection.git</span><br><span class="line">cd Relation-Networks-for-Object-Detection</span><br></pre></td></tr></table></figure></li>
+<li><p>Run <code>sh ./init.sh</code>. The scripts will build cython module automatically and create some folders.</p>
+</li>
+<li><p>Install MXNet:</p>
+</li>
+</ol>
+<p>  <strong><em>Quick start</em></strong></p>
+<p>  3.1 Install MXNet and all dependencies by<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install -r requirements.txt</span><br></pre></td></tr></table></figure><br>  If there is no other error message, MXNet should be installed successfully. </p>
+<p>  <strong><em>Build from source (alternative way)</em></strong></p>
+<p>  3.2 Clone MXNet v1.1.0 by<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone -b v1.1.0 --recursive https:&#x2F;&#x2F;github.com&#x2F;apache&#x2F;incubator-mxnet.git</span><br></pre></td></tr></table></figure><br>  3.3 Compile MXNet<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd $&#123;MXNET_ROOT&#125;</span><br><span class="line">make -j $(nproc) USE_OPENCV&#x3D;1 USE_BLAS&#x3D;openblas USE_CUDA&#x3D;1 USE_CUDA_PATH&#x3D;&#x2F;usr&#x2F;local&#x2F;cuda USE_CUDNN&#x3D;1</span><br></pre></td></tr></table></figure><br>  3.4 Install the MXNet Python binding by</p>
+<p>  <strong><em>Note: If you will actively switch between different versions of MXNet, please follow 3.5 instead of 3.4</em></strong><br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd python</span><br><span class="line">sudo python setup.py install</span><br></pre></td></tr></table></figure><br>  3.5 For advanced users, you may put your Python packge into <code>./external/mxnet/$(YOUR_MXNET_PACKAGE)/mxnet</code>, and modify <code>MXNET_VERSION</code> in <code>./experiments/relation_rcnn/cfgs/*.yaml</code> to <code>$(YOUR_MXNET_PACKAGE)</code>. Thus you can switch among different versions of MXNet quickly.</p>
+<h2 id="Preparation-for-Training-amp-Testing"><a href="#Preparation-for-Training-amp-Testing" class="headerlink" title="Preparation for Training &amp; Testing"></a>Preparation for Training &amp; Testing</h2><ol>
+<li><p>Please download COCO datasets, and make sure it looks like this:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.&#x2F;data&#x2F;coco&#x2F;</span><br></pre></td></tr></table></figure></li>
+<li><p>Please download ImageNet-pretrained ResNet-v1-101 backbone model and Faster RCNN ResNet-v1-101 model manually from <a target="_blank" rel="noopener" href="https://1drv.ms/u/s!Am-5JzdW2XHzhqpCxvNTMZDlcDTpSA">OneDrive</a> or <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1GMca4yxLoQMV2tfBabWQ3Q">Baiduyun (password:pech)</a>, and put it under folder <code>./model/pretrained_model</code>. Make sure it looks like this:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.&#x2F;model&#x2F;pretrained_model&#x2F;resnet_v1_101-0000.params</span><br></pre></td></tr></table></figure>
+<p>We use a pretrained Faster RCNN and fix its params when training Faster RCNN with Learn NMS head. If you are trying to conduct such experiments, please also include the pretrained Faster RCNN model from OneDrive and put it under folder <code>./model/pretrained_model</code>. Make sure it looks like this:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.&#x2F;model&#x2F;pretrained_model&#x2F;coco_resnet_v1_101_rcnn-0008.params</span><br></pre></td></tr></table></figure></li>
+<li><p>For FPN related experiments, we use proposals generated by a pretrained RPN to speed up our experiments. Please download the proposals from <a target="_blank" rel="noopener" href="https://1drv.ms/u/s!Am-5JzdW2XHzhqpEnDg8s4FH33zh8g">OneDrive</a> or Baiduyun (due to its size constraint) <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1Wr54mf54G2URnLW-A9bGFA">part1 (password:g24u)</a> <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1RNggxprIPxNb1S6aQ9hiZw">part2 (password:ipa8)</a> and put it under folder <code>./proposal/resnet_v1_101_fpn/rpn_data</code>. Make sure it looks like this:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">.&#x2F;proposal&#x2F;resnet_v1_101_fpn&#x2F;rpn_data&#x2F;COCO_minival2014_rpn.pkl</span><br><span class="line">.&#x2F;proposal&#x2F;resnet_v1_101_fpn&#x2F;rpn_data&#x2F;COCO_train2014_rpn.pkl</span><br><span class="line">.&#x2F;proposal&#x2F;resnet_v1_101_fpn&#x2F;rpn_data&#x2F;COCO_valminusminival2014_rpn.pkl</span><br></pre></td></tr></table></figure>
+<h2 id="Demo-Models"><a href="#Demo-Models" class="headerlink" title="Demo Models"></a>Demo Models</h2></li>
+</ol>
+<p>We provide trained relation network models, covering all settings in the above Main Results table.</p>
+<ol>
+<li><p>To try out our pre-trained relation network models, please download manually from <a target="_blank" rel="noopener" href="https://1drv.ms/u/s!Am-5JzdW2XHzhqpD-UHVYNbj25lU0w">OneDrive</a> or <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1DBZmbpBxn4NaqY8ljLdEUg">Baiduyun (password:9q6i)</a>, and put it under folder <code>output/</code>.</p>
+<p> Make sure it looks like this:</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">.&#x2F;output&#x2F;rcnn&#x2F;coco&#x2F;resnet_v1_101_coco_trainvalminus_rcnn_end2end_8epoch&#x2F;train2014_valminusminival2014&#x2F;rcnn_coco-0008.params</span><br><span class="line">.&#x2F;output&#x2F;rcnn&#x2F;coco&#x2F;resnet_v1_101_coco_trainvalminus_rcnn_end2end_relation_8epoch&#x2F;train2014_valminusminival2014&#x2F;rcnn_coco-0008.params</span><br><span class="line">.&#x2F;output&#x2F;rcnn&#x2F;coco&#x2F;resnet_v1_101_coco_trainvalminus_rcnn_end2end_learn_nms_3epoch&#x2F;train2014_valminusminival2014&#x2F;rcnn_coco-0003.params</span><br><span class="line">.&#x2F;output&#x2F;rcnn&#x2F;coco&#x2F;resnet_v1_101_coco_trainvalminus_rcnn_end2end_relation_learn_nms_8epoch&#x2F;train2014_valminusminival2014&#x2F;rcnn_coco-0008.params</span><br><span class="line">.&#x2F;output&#x2F;rcnn&#x2F;coco&#x2F;resnet_v1_101_coco_trainvalminus_rcnn_dcn_end2end_8epoch&#x2F;train2014_valminusminival2014&#x2F;rcnn_coco-0008.params</span><br><span class="line">.&#x2F;output&#x2F;rcnn&#x2F;coco&#x2F;resnet_v1_101_coco_trainvalminus_rcnn_dcn_end2end_relation_learn_nms_8epoch&#x2F;train2014_valminusminival2014&#x2F;rcnn_coco-0008.params</span><br><span class="line">.&#x2F;output&#x2F;rcnn&#x2F;coco&#x2F;resnet_v1_101_coco_trainvalminus_rcnn_fpn_8epoch&#x2F;train2014_valminusminival2014&#x2F;rcnn_fpn_coco-0008.params</span><br><span class="line">.&#x2F;output&#x2F;rcnn&#x2F;coco&#x2F;resnet_v1_101_coco_trainvalminus_rcnn_fpn_relation_learn_nms_8epoch&#x2F;train2014_valminusminival2014&#x2F;rcnn_fpn_coco-0008.params</span><br></pre></td></tr></table></figure></li>
+<li><p>To run the Faster RCNN with Relation Module and Learn NMS model, run</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python experiments&#x2F;relation_rcnn&#x2F;rcnn_test.py --cfg experiments&#x2F;relation_rcnn&#x2F;cfgs&#x2F;resnet_v1_101_coco_trainvalminus_rcnn_end2end_relation_learn_nms_8epoch.yaml --ignore_cache</span><br></pre></td></tr></table></figure>
+<p> If you want to try other models, just change the config files. There are ten config files in <code>./experiments/relation_rcnn/cfg</code> folder, eight of which are provided with pretrained models.</p>
+</li>
+</ol>
+<h2 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h2><ol>
+<li><p>All of our experiment settings (GPU #, dataset, etc.) are kept in yaml config files at folder <code>./experiments/relation_rcnn/cfgs</code>.</p>
+</li>
+<li><p>Ten config files have been provided so far, namely, Faster RCNN, Deformable Faster RCNN and FPN with 2FC head, 2FC + Relation Head and 2FC + Relation + Learn NMS(e2e), and an additional Faster RCNN with 2FC + Learn NMS head. We use 4 GPUs to train our models.</p>
+</li>
+<li><p>To perform experiments, run the python scripts with the corresponding config file as input. For example, to train and test Faster RCNN with Relation Module and Learn NMS(e2e), use the following command:</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python experiments\relation_rcnn\rcnn_end2end_train_test.py --cfg experiments&#x2F;relation_rcnn&#x2F;cfgs&#x2F;resnet_v1_101_coco_trainvalminus_rcnn_end2end_relation_learn_nms_8epoch.yaml</span><br></pre></td></tr></table></figure>
+<p> A cache folder would be created automatically to save the model and the log under <code>output/rcnn/</code>.</p>
+<p> The rcnn_end2end_train_test.py script is for Faster RCNN and Deformable Faster RCNN experiments that train RPN together with RCNN. To train and test FPN which use previously generated proposals, use the following command:</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python experiments\relation_rcnn\rcnn_train_test.py --cfg experiments&#x2F;relation_rcnn&#x2F;cfgs&#x2F;resnet_v1_101_coco_trainvalminus_fpn_relation_learn_nms_8epoch.yaml</span><br></pre></td></tr></table></figure></li>
+<li><p>Please find more details in config files and in our code.</p>
+</li>
+</ol>
+<h2 id="FAQ"><a href="#FAQ" class="headerlink" title="FAQ"></a>FAQ</h2><p>Q: I encounter <code>segment fault</code> at the beginning.</p>
+<p>A: A compatibility issue has been identified between MXNet and opencv-python 3.0+. We suggest that you always <code>import cv2</code> first before <code>import mxnet</code> in the entry script. </p>
+<br/>
+
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/01/12/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/" data-id="ckju2ba9r0001eojd3mf92aba" data-title="我的第一篇博客文章" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2021/01/12/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/01/">January 2021</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2021/01/12/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/">我的第一篇博客文章</a>
+          </li>
+        
+          <li>
+            <a href="/2021/01/12/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2021 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
